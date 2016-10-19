@@ -53,3 +53,5 @@ or
 
 Your text elements have to use the class `floating_text` when you launch the function.
 Then you can add and remove the class `run-animation` when you want to control the running state.
+
+Check the example !
