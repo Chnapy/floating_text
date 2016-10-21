@@ -2,6 +2,9 @@
 
 /**
  * 
+ * @author Haddad Richard https://github.com/Chnapy
+ * @version 0.2
+ * 
  * In HTML, example of an element of floating text :
  * <div class="floating_text run-animation">
  *		Example floating text
