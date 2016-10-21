@@ -1,7 +1,7 @@
 # floating_text
 v0.2
 
-Very little library for make text floating with only Javascript and JQuery. So **it requires JQuery**.
+Very little library for render text floating with only Javascript and JQuery. So **it requires JQuery**.
 
 GIFs are better than words :
 
@@ -32,19 +32,16 @@ Example:
 
 Then, when you want to launch the floating effect (at any moment), you have to launch a javascript function:
 ```javascript
-	FLOATING_TEXT.float(); //(it will work for body and his children)
+	FLOATING_TEXT.float();
 ```
 or with parameters
 ```javascript
-	FLOATING_TEXT.float(element, recursive); //(it will work for your_element and his children)
+	FLOATING_TEXT.float(element, recursive);
 ```
 `element` is a HTML element that you can pick with JQuery.
 `recursive` is a boolean that indicate to check children of `element` in addition of him. By default it's set to false;
 
 Note that `FLOATING_TEXT.float();` is exactly like `FLOATING_TEXT.float($('body'), true);`
-
-Your text elements have to use the class `floating_text` when you launch the function.
-Then you can add and remove the class `run-animation` when you want to control the running state.
 
 Floating_text has multiple default values that can be modify with the change functions :
 ```javascript
@@ -81,7 +78,7 @@ You can also use some secondary functions :
 ### HTML data
 
 In HTML your elements have to have the class `floating_text` (class names can be changed) when they are targeted by the `float()` js function.
-The class `run-animation` is necessary for animation running, but it can be add (and remove) at any moment.
+The class `run-animation` is necessary for animation running, but it can be add (and remove) at any moment to control the running state.
 ```HTML
 		<div class="floating_text run-animation" id="example-1">
 			Example1 floating text (duration: 1s/keyframe [default value]) (translate: 2px/keyframe [default value])
