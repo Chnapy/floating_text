@@ -8,11 +8,6 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		
-		<!-- The librairy (css) -->
-		<!-- On can ever call the minified file -->
-		<link rel="stylesheet" href="../css/floating_text.css"/>
-		
 		<!-- Example CSS file -->
 		<link rel="stylesheet" href="example.css"/>
 	</head>
@@ -22,15 +17,28 @@
 			The class floating_text is required.
 			You can add run-animation later, when you want to animate the element
 		-->
+		
 		<div class="floating_text run-animation" id="example-1">
-			Example floating text
+			Example1 floating text (duration: 1s/keyframe [default value]) (translate: 2px/keyframe [default value])
+		</div>
+		
+		<div class="floating_text run-animation" id="example-2" data-float-duration='3'>
+			Example2 floating text (duration: 3s/keyframe) (translate: 1px/keyframe [default value])
+		</div>
+		
+		<div class="floating_text run-animation" id="example-3" data-float-duration='0.5' data-float-translate='1'>
+			Example3 floating text (duration: 0.5s/keyframe) (translate: 1px/keyframe)
+		</div>
+		
+		<div class="floating_text run-animation" id="example-4" data-float-duration='0.25' data-float-translate='1'>
+			Example4 floating text (duration: 0.25s/keyframe) (translate: 1px/keyframe)
 		</div>
 		
 		
 		<!-- JQuery is required ! -->
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 		
-		<!-- The librairy (js) -->
+		<!-- The floating text librairy (js) -->
 		<script src="../js/floating_text.js"></script>
 		
 		<!-- Example JS file -->

@@ -8,4 +8,5 @@ $(function() {
 	
 	//This launch on element targeted
 	//FLOATING_TEXT.float('#my-element');
+	
 });

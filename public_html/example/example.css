@@ -1,13 +1,34 @@
 
-
-body {
+[id^="example-"], [id*="example-"] {
+	display: block;
 	text-align: center;
-}
-
-#example-1 {
 	font-family: Open Sans, sans-serif;
 	font-size: 24px;
 	color: #333;
-	
 	margin-top: 100px;
+}
+
+#example-1 .floating_text_char {
+	background: rgba(0,0,0,0.2);
+}
+
+#example-2 {
+	color: white;
+	text-shadow: -1px -1px 0 #393939, 
+		-1px 0px 0 #393939, 
+		-1px 1px 0 #393939, 
+		0px -1px 0 #393939, 
+		0px 0px 0 #393939, 
+		0px 1px 0 #393939, 
+		1px -1px 0 #393939, 
+		1px 0px 0 #393939, 
+		1px 1px 0 #393939;
+}
+
+#example-3 {
+	text-shadow: 0 0 20px rgba(255,0,0,1);
+}
+
+#example-4 .floating_text_char {
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
